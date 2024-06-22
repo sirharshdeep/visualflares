@@ -1,0 +1,61 @@
+
+body{
+    background-image: url(bground.jpg);
+    background-repeat:repeat-y;
+    background-size: cover;
+}
+
+#headTitle{
+    color: blueviolet;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+#menuMain{
+    background-color: blanchedalmond;
+    text-align: center;
+    border: solid red; 
+    overflow: hidden;
+    
+}
+#menuMain ul{
+    float: left;
+    padding: 0px 0px;
+
+}
+#menuMain ul li {
+    float: left;
+    list-style-type: none;
+    
+}
+#menuMain ul li a{
+    color: red; /* Red text color */
+    text-align: center;
+    padding: 0px 30px; /* Padding for anchor tags */
+    text-decoration: none;}
+
+
+#intro{
+    color: rgb(1, 1, 184);
+    background-color: blanchedalmond;
+    text-align: center;
+    letter-spacing: 1.3px;
+    word-spacing: 1.3px;
+    clear: left;   
+}
+
+
+
+footer {
+    background-color: blanchedalmond;
+    margin-left: 15%;
+    color: green;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 70%;
+  }
+
+
+    
