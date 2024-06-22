@@ -1,61 +1,91 @@
-
-body{
-    background-image: url(bground.jpg);
-    background-repeat:repeat-y;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://source.unsplash.com/random') no-repeat center center fixed;
     background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#headTitle{
-    color: blueviolet;
-    background-color: blanchedalmond;
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
     text-align: center;
+    width: 300px;
 }
 
-#menuMain{
-    background-color: blanchedalmond;
-    text-align: center;
-    border: solid red; 
-    overflow: hidden;
-    
-}
-#menuMain ul{
-    float: left;
-    padding: 0px 0px;
-
-}
-#menuMain ul li {
-    float: left;
-    list-style-type: none;
-    
-}
-#menuMain ul li a{
-    color: red; /* Red text color */
-    text-align: center;
-    padding: 0px 30px; /* Padding for anchor tags */
-    text-decoration: none;}
-
-
-#intro{
-    color: rgb(1, 1, 184);
-    background-color: blanchedalmond;
-    text-align: center;
-    letter-spacing: 1.3px;
-    word-spacing: 1.3px;
-    clear: left;   
+h1 {
+    margin-bottom: 1.5rem;
 }
 
+.input-group {
+    margin-bottom: 1rem;
+}
 
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-button, .theme-toggle {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+}
+
+.login-button {
+    background-color: #ff5722;
+}
+
+.theme-toggle {
+    background-color: #607d8b;
+}
 
 footer {
-    background-color: blanchedalmond;
-    margin-left: 15%;
-    color: green;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    width: 70%;
-  }
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+}
 
+.light-theme {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
 
-    
+.light-theme .container {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.light-theme .login-button, .light-theme .theme-toggle {
+    color: white;
+}
+
+.light-theme .login-button {
+    background-color: #ff5722;
+}
+
+.light-theme .theme-toggle {
+    background-color: #607d8b;
+}
+
